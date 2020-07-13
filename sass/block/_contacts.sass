@@ -1,0 +1,85 @@
+.contacts
+    padding: 180px 0 60px 0
+    @media (max-width: 767px)
+        padding: 100px 0 60px 0
+    @media (max-width: 440px)
+        padding: 40px 0 30px 0
+    &__header-block
+        margin: 0 0 120px 0  
+        @media (max-width: 440px)
+            margin-bottom: 30px
+    &__body
+        @include flexbox
+        margin: 0 -25px
+        @media (max-width: 767px)
+            display: block
+    &__column
+        flex: 0 1 50%
+        padding: 0 25px
+    &__form
+        text-align: right
+        @media (max-width: 767px)
+            text-align: left
+            margin: 0 0 30px 0
+    &__content
+        color: #000000
+        font-size: 14px
+        max-width: 252px
+        @media (max-width: 767px)
+            max-width: none
+    &__text
+        font-weight: 300
+        line-height: 26px
+        margin: 0 0 35px 0
+    &__name
+        font-weight: 700
+        margin: 0 0 25px 0
+    &__social
+        margin: 0 0 10px 0
+    &__email a
+        color: #000
+        span
+            font-weight: 700
+            &:hover
+                text-decoration: underline
+
+.form-contacts
+    &__body
+        display: inline-block
+        width: 100%
+        max-width: 385px
+        @media (max-width: 767px)
+            max-width: none
+    &__row
+        @include flexbox
+        margin: 0 -15px 70px -15px
+        @media (max-width: 440px)
+            display: block
+            margin-bottom: 30px
+    &__columns
+        flex: 0 1 50%
+        padding: 0 15px
+    &__input
+        margin-bottom: 30px
+    &__label
+        text-align: left
+        margin: 0 0 18px 0
+        color: #000000
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.84px
+        @media (max-width: 440px)
+            margin-bottom: 10px
+    &__btn.btn
+        margin: 35px 0 0 0
+        @media (max-width: 440px)
+            margin-top: 10px
+            width: 100%
+
+.social
+    @include flexbox
+
+    &__item
+        margin: 0 15px 0 0 
+

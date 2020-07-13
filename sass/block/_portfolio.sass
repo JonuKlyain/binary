@@ -1,0 +1,63 @@
+.portfolio
+    background-color: #f3f3f3
+    padding: 105px 0 60px 0
+    @media (max-width: 990px)
+        padding: 60px 0 30px 0
+    @media (max-width: 440px)
+        padding: 30px 0 20px 0
+    &__header-block
+        padding: 0 0 50px 0
+        @media (max-width: 990px)
+            padding: 0 0 30px 0
+        @media (max-width: 767px)   
+            padding: 0 0 20px 0
+    &__items
+        @include flexbox
+        margin: 0 -15px
+        flex-wrap: wrap
+        @media (max-width: 440px)
+            margin: 0 -5px
+
+    &__column
+        flex: 0 0 50%
+        max-width: 50%
+        padding: 0 15px
+        margin: 0 0 30px 0
+        img
+            max-width: 100%
+        @media (max-width: 767px)
+            flex: 1 1 100%
+        @media (max-width: 440px)
+            padding: 0 5px
+            margin: 0 0 10px 0
+    &__item
+
+    &__footer
+        padding: 35px 0 0 0
+        text-align: center
+        @media (max-width: 440px)
+            padding: 10px 0 0 0
+    &__btn
+
+
+.filter
+    margin: 0 0 100px 0
+    @media (max-width: 990px)
+        margin: 0 0 40px 0
+    @media (max-width: 440px)
+        margin: 0 0 20px 0
+    &__list
+        @include flexbox
+        justify-content: center
+        align-items: center
+    &__item
+        font-size: 15px
+        text-transform: uppercase
+        font-weight: 700
+        padding: 0 30px 30px 30px
+        cursor: pointer
+        transition: all 0.3s ease 0s
+        &.active
+            color: #ada074
+        @media (max-width: 440px)
+            padding: 0 15px 10px 10px
